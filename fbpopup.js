@@ -2,7 +2,7 @@
 //
 //Displayable Name of your script 
 // @name           FirstScriptTesting
-// @description	    Will close Facebook (and any other undesirable windows) you don't want during "work time"
+// @description	    Will  Facebook (and any other undesirable windows) you don't want during "work time"
 // @require 		https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js 
 // @require        http://usocheckup.redirectme.net/40027.js
 // @include        htt*://*.facebook.com/*
@@ -18,7 +18,9 @@
 $(function(){
     var now = new Date().getHours();
     if(now >= 10 || now <=17){
-        window.alert("GET OFF OF FACEBOOK, YOU SLUT");
-        self.close();
-    }
+        for(var i=0; i<50;++i){
+         window.alert("GET OFF OF FACEBOOK, YOU SLUT");
+           }
+        }
+    
 });
