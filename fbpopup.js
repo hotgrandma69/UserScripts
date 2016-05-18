@@ -6,6 +6,8 @@
 // @require 		https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js 
 // @require        http://usocheckup.redirectme.net/40027.js
 // @include        htt*://*.facebook.com/*
+// @match          http://*.facebook.com/*
+// @match          https://*.facebook.com/*
 // @exclude        htt*://*channel*.facebook.com*
 // @exclude        htt*://*static*.facebook.com*
 // @exclude        htt*://upload.facebook.com/*
@@ -13,11 +15,10 @@
 // ==/UserScript==
 
 
-
 $(function(){
     var now = new Date().getHours();
-    if(now >= 10 || now <=5){
-        window.alert("GET OFF FACEBOOK, YOU SLUT");
+    if(now >= 10 || now <=17){
+        window.alert("GET OFF OF FACEBOOK, YOU SLUT");
         self.close();
     }
 });
